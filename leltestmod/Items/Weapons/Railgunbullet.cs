@@ -29,7 +29,7 @@ public class Railgunbullet : ModItem
     {
         ModRecipe recipe = new ModRecipe(mod);
         recipe.AddIngredient("Wood", 1);
-        recipe.SetResult(this);
+        recipe.SetResult(this, 15);
         recipe.AddRecipe();
     }
 }}
