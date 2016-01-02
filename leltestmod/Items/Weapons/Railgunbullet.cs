@@ -20,8 +20,8 @@ public class Railgunbullet : ModItem
         item.knockBack = 1.5f;
         item.value = 10;
         item.rare = 2;
-        item.shoot = 14;
-        item.shootSpeed = 5f;
+        item.shoot = mod.ProjectileType("Railgunbullet");
+        item.shootSpeed = 16f;
         item.ammo = ProjectileID.Bullet;
     }
 
@@ -29,7 +29,7 @@ public class Railgunbullet : ModItem
     {
         ModRecipe recipe = new ModRecipe(mod);
         recipe.AddIngredient("Wood", 1);
-        recipe.SetResult(this);
+        recipe.SetResult(this, 15);
         recipe.AddRecipe();
     }
 }}
