@@ -15,13 +15,13 @@ public class Railgunbullet : ModItem
         item.width = 8;
         item.height = 8;
         item.maxStack = 999;
-        item.toolTip = "This is a modded bullet ammo.";
+        item.toolTip = "Used for railguns";
         item.consumable = true;
         item.knockBack = 1.5f;
         item.value = 10;
         item.rare = 2;
-        item.shoot = mod.ProjectileType("ExampleBullet");
-        item.shootSpeed = 16f;
+        item.shoot = 14;
+        item.shootSpeed = 5f;
         item.ammo = ProjectileID.Bullet;
     }
 

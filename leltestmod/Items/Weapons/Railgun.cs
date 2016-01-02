@@ -15,8 +15,8 @@ public class Railgun : ModItem
         item.width = 60;
         item.height = 20;
         item.toolTip = "Head shot!!!";
-        item.useTime = 20;
-        item.useAnimation = 19;
+        item.useTime = 10;
+        item.useAnimation = 12;
         item.useStyle = 5;
         item.noMelee = true; //so the item's animation doesn't do damage
         item.knockBack = 100;
@@ -25,7 +25,7 @@ public class Railgun : ModItem
         item.useSound = 11;
         item.autoReuse = true;
         item.shoot = 10; //idk why but all the guns in the vanilla source have this
-        item.shootSpeed = 10f;
+        item.shootSpeed = 3f;
         item.useAmmo = ProjectileID.Bullet;
     }
 
