@@ -1,0 +1,4 @@
+author = Pipapo
+displayName = leltestmod
+version = 0.3
+dllReferences = BadUtils
