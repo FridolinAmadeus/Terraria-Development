@@ -18,10 +18,10 @@ public class Railgunbullet : ModProjectile
         projectile.ranged = true;
         projectile.penetrate = 5;
         projectile.timeLeft = 600;
-        projectile.light = 0.5f;
+        //projectile.light = 0.5f;
         projectile.extraUpdates = 1;
-        ProjectileID.Sets.TrailCacheLength[projectile.type] = 5;
-        ProjectileID.Sets.TrailingMode[projectile.type] = 0;
+        //ProjectileID.Sets.TrailCacheLength[projectile.type] = 5;
+        //ProjectileID.Sets.TrailingMode[projectile.type] = 0;
         aiType = ProjectileID.Bullet;
 		//AddTooltip("Blows you to the next galaxy");
     }

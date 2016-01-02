@@ -9,7 +9,7 @@ public class Railgunbullet : ModItem
 {
     public override void SetDefaults()
     {
-        item.name = "Example Bullet";
+        item.name = "Railgun bullet";
         item.damage = 2;
         item.ranged = true;
         item.width = 8;
