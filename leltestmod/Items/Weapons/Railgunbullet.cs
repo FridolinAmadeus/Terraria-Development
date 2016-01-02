@@ -20,7 +20,7 @@ public class Railgunbullet : ModItem
         item.knockBack = 1.5f;
         item.value = 10;
         item.rare = 2;
-        item.shoot = mod.ProjectileType("ExampleBullet");
+        item.shoot = mod.ProjectileType("Railgunbullet");
         item.shootSpeed = 16f;
         item.ammo = ProjectileID.Bullet;
     }

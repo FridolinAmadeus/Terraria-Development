@@ -16,7 +16,7 @@ public class Railgun : ModItem
         item.height = 20;
         item.toolTip = "Head shot!!!";
         item.useTime = 20;
-        item.useAnimation = 19;
+        item.useAnimation = 20;
         item.useStyle = 5;
         item.noMelee = true; //so the item's animation doesn't do damage
         item.knockBack = 100;
