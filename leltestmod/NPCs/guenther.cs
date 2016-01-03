@@ -8,13 +8,13 @@ public class guenther : ModNPC
 {
     public override bool Autoload(ref string name, ref string texture)
     {
-        name = "Blockmann";
+        name = "Stickman";
         return mod.Properties.Autoload;
     }
 
     public override void SetDefaults()
     {
-        npc.name = "Example Person";
+        npc.name = "Stickman";
         npc.townNPC = true;
         npc.friendly = true;
         npc.width = 18;
@@ -41,11 +41,6 @@ public class guenther : ModNPC
         return true;
     }
 
-    public override bool CheckConditions(int left, int right, int top, int bottom)
-    {
-        return true;
-    }
-
     public override string TownNPCName()
     {
         switch(WorldGen.genRand.Next(4))
@@ -63,19 +58,16 @@ public class guenther : ModNPC
 
     public override string GetChat()
     {
-        int partyGirl = NPC.FindFirstNPC(NPCID.PartyGirl);
-        if(partyGirl >= 0 && Main.rand.Next(4) == 0)
-        {
-            return "Can you please tell " + Main.npc[partyGirl].displayName + " to stop decorating my house with colors?";
-        }
-        switch(Main.rand.Next(3))
+        switch(Main.rand.Next(4))
         {
         case 0:
-            return "Sometimes I feel like I'm different from everyone else here.";
+            return "Hast du schon den frittierten Autoreifen ausprobiert? Wirklich fandasdisch!";
         case 1:
-            return "What's your favorite color? My favorite colors are white and black.";
+            return "Ich bin ein Bauer und ich bin dumm.";
+        case 2:
+            return "Wie, ich hab keine Nase? Schau dich mal an!";
         default:
-            return "What? I don't have any arms or legs? Oh, don't be ridiculous!";
+            return "Und dann sag ich zu ihm, das ist niemals Pferdeleber! Unsinn!";
         }
     }
 
