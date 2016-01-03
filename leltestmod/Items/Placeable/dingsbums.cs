@@ -21,7 +21,7 @@ public class dingsbums : ModItem
         item.value = 50000;
         item.createTile = mod.TileType("dingsbums");
         item.placeStyle = 0;
-        AddTooltip("Wirklich fandasdisch!");
+        AddTooltip("'Wirklich fandasdisch!'");
     }
 
     public override void AddRecipes()

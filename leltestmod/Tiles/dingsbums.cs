@@ -24,7 +24,7 @@ public class dingsbums : ModTile
     {
         if(frameX == 0)
         {
-            Item.NewItem(i * 16, j * 16, 32, 32, mod.ItemType("dingsbums"));
+            Item.NewItem(i * 16, j * 16, 48, 48, mod.ItemType("dingsbums"));
         }
     }
 }}

@@ -117,4 +117,9 @@ public class guenther : ModNPC
         multiplier = 12f;
         randomOffset = 2f;
     }
+
+    public virtual bool CheckActive()
+    {
+        return false;
+    }
 }}
