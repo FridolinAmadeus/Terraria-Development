@@ -41,6 +41,11 @@ public class guenther : ModNPC
         return true;
     }
 
+    public override bool CheckConditions(int left, int right, int top, int bottom)
+    {
+        return true;
+    }
+
     public override string TownNPCName()
     {
         switch(WorldGen.genRand.Next(4))
