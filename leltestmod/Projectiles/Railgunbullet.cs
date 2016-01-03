@@ -16,7 +16,7 @@ public class Railgunbullet : ModProjectile
         projectile.aiStyle = 1;
         projectile.friendly = true;
         projectile.ranged = true;
-        projectile.penetrate = 1;
+        projectile.penetrate = 2;
         projectile.timeLeft = 600;
         //projectile.light = 0.5f;
         projectile.extraUpdates = 1;
