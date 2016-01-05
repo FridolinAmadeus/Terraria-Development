@@ -4,7 +4,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace leltestmod.Items.Placeable {
-public class dingsbums : ModItem
+public class FrittierterAutoreifen : ModItem
 {
     public override void SetDefaults()
     {
@@ -19,15 +19,16 @@ public class dingsbums : ModItem
         item.useStyle = 1;
         item.consumable = true;
         item.value = 50000;
-        item.createTile = mod.TileType("dingsbums");
-        item.placeStyle = 0;
+        item.createTile = mod.TileType("FrittierterAutoreifen");
         AddTooltip("'Wirklich fandasdisch!'");
     }
 
     public override void AddRecipes()
     {
         ModRecipe recipe = new ModRecipe(mod);
-        recipe.AddIngredient("Wood", 10);
+        recipe.AddIngredient(null, "Autoreifen");
+        recipe.AddIngredient(null, "Oil", 2);
+        recipe.AddTile(null, "Fritteuse");
         recipe.SetResult(this);
         recipe.AddRecipe();
     }

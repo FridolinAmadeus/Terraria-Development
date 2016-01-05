@@ -86,11 +86,15 @@ public class guenther : ModNPC
 
     public override void SetupShop(Chest shop, ref int nextSlot)
     {
-        shop.item[nextSlot].SetDefaults(mod.ItemType("dingsbums"));
+        shop.item[nextSlot].SetDefaults(mod.ItemType("Fritteuse"));
         nextSlot++;
         shop.item[nextSlot].SetDefaults(mod.ItemType("Railgun"));
         nextSlot++;
         shop.item[nextSlot].SetDefaults(mod.ItemType("Railgunbullet"));
+        nextSlot++;
+        shop.item[nextSlot].SetDefaults(mod.ItemType("Autoreifen"));
+        nextSlot++;
+        shop.item[nextSlot].SetDefaults(mod.ItemType("Oil"));
         nextSlot++;
     }
 

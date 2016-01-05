@@ -28,18 +28,12 @@ public class Communist : ModNPC
         npc.value = Item.buyPrice(0, 0, 15, 0);
         banner = npc.type;
         bannerItem = mod.ItemType("CommunistBanner");
+        animationType = 22;
+        Main.npcFrameCount[npc.type] = 25;
     }
 
     public override float CanSpawn(NPCSpawnInfo spawnInfo)
     {
-        return 100;
-    }
-
-    public override void FindFrame(int frameHeight)
-    {
-        npc.spriteDirection = npc.direction;
-        npc.frameCounter += 1.0;
-        npc.frameCounter %= 24.0;
-        npc.frame.Y = frameHeight * (int)(npc.frameCounter / 6.0);
+        return 1;
     }
 }}
